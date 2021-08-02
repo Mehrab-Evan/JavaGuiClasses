@@ -1,0 +1,23 @@
+//This JFrame Class is for Creating a Frame
+
+package com.Evan;
+
+import javax.swing.*;
+import java.awt.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+	    JFrame myFrame = new JFrame(); // Creating Object named myFrame of JFrame Class
+	    myFrame.setVisible(true);
+	    myFrame.setTitle("MEvan");
+	    myFrame.setSize(680, 680);
+		myFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Exit of Application other wise it runs background
+		myFrame.setResizable(true); // now the frame is resizable if false it will not be able to be resize
+
+		ImageIcon logoMe = new ImageIcon("Mehrab.png"); //First innitializing the image location
+		myFrame.setIconImage(logoMe.getImage()); // Adding the image in Frame using getImage Function
+																// As much as I understand getImage is a function of ImageIcon Class
+		myFrame.getContentPane().setBackground(new Color(64, 51, 68));
+    }
+}
